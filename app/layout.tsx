@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./main.scss";
 
 export const metadata: Metadata = {
   title: "Puzzle game AI",
