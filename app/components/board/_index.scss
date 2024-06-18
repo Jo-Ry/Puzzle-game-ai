@@ -1,0 +1,47 @@
+.board {
+	display: grid;
+	gap: 1rem;
+	padding: 0;
+	margin: 0;
+
+	&__tile {
+		list-style: none;
+		aspect-ratio: 1 / 1;
+		width: clamp(50px, 6vw, 80px);
+	}
+
+	&__tile-button {
+		position: relative;
+		border-radius: 0.5rem;
+		box-shadow: 0 0 10px hsl(0, 0%, 10%);
+		width: 100%;
+		height: 100%;
+		background-color: hsl(0, 0%, 10%);
+
+
+		// Extracting the tile numbers from the flow as the result of the number
+		// width caused the table to overflow, due to the aspect-ratio on <li>.
+		p {
+			position: absolute;
+			inset: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #eeeeee;
+			font-size: clamp(16px, 2vw, 30px);
+		}
+
+		&--correct-postion {
+			background-color: orange;
+			color: hsl(0, 0%, 10%);
+		}
+
+		&:disabled {
+			background-color: transparent;
+
+			p {
+				color: transparent;
+			}
+		}
+	}
+}

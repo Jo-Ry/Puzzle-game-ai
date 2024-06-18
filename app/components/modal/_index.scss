@@ -1,0 +1,40 @@
+.modal {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	background-color: hsla(0, 0%, 10%, 0.7);
+	padding-inline: 1rem;
+
+	&__box {
+		margin: auto;
+		background-color: #eeeeee;
+		border-radius: 1rem;
+		padding: 2rem;
+		text-align: center;
+
+		p {
+			font-size: 1.5rem;
+			margin: 1.5rem 0;
+		}
+
+		&-emoji {
+			font-size: 3rem;
+			margin: 0;
+		}
+
+		&-buttons {
+			display: flex;
+			gap: 2rem;
+			justify-content: center;
+
+			button {
+				padding: .8rem 1.5rem;
+				background-color: hsl(0, 0%, 40%);
+				border-radius: .5rem;
+				color: #eeeeee;
+				margin: 0;
+				font-size: 1rem;
+			}
+		}
+	}
+}

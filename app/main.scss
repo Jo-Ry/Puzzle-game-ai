@@ -1,4 +1,11 @@
 /*
+	Import all scss files here!
+*/
+@use './components/app';
+@use './components/board';
+@use './components/modal';
+
+/*
     For ease of mind and the small scale of the project i put the "reset"
 	styling rules directly in this file.
 */
